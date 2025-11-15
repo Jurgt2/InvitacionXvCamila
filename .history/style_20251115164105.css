@@ -1,13 +1,3 @@
-/* Fondo dorado para el cuadro de Confirmar Asistencia */
-.cuadro-rsvp {
-    background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%) !important;
-    border: 3px solid #f3d37a;
-    border-radius: 20px;
-    padding: 32px 18px 38px 18px;
-    margin: 35px 0;
-    text-align: center;
-    box-shadow: 0 4px 24px #e6e6fa55;
-}
 /* Cuadros personalizados para misa, recepción e itinerario */
 .cuadro-misa, .cuadro-recepcion, .cuadro-itinerario {
     background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%) !important;

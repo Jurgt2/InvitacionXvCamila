@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años - María Camila</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+    <!-- Encabezado superior eliminado -->
+        <!-- 1. Foto circular de la quinceañera -->
+        <div class="photo-section">
+            <div class="photo-frame">
+                <img src="quinceanera.jpg" alt="Emily Camila" class="quinceanera-photo">
+            </div>
+            <div class="crown-decoration">👑</div>
+        </div>
+        <!-- 2. Título principal -->
+        <h1 class="main-title" style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; font-weight: 700; color: #7d4ba8; text-align: center; margin: 20px 0 0 0;">
+            Emily Camila <span style="font-size:2.5rem; color:#6a3d92; font-family: 'Dancing Script', cursive; font-weight: 700;">Salazar Santamaría</span>
+        </h1>
+        <!-- 3. Subtítulo descriptivo -->
+        <p class="subtitle">
+            Sus 15 años son un reflejo de su belleza, sus sueños y su alegría.<br>
+            Hoy celebramos con entusiasmo y amor...
+        </p>
+        <!-- Fecha destacada (ahora debajo del texto) -->
+        <div class="fecha-xv" style="text-align:center; margin:10px 0 18px 0;">
+            <span style="display:inline-block; background:linear-gradient(90deg,#e6e6fa 60%,#d4af37 100%); color:#7d4ba8; border-radius:12px; padding:6px 18px; font-size:1.1rem; font-weight:600; letter-spacing:1px; box-shadow:0 2px 8px #e6e6fa80;">SÁBADO <span style="color:#388e3c; font-size:1.3rem;">20</span> DICIEMBRE</span>
+        </div>
+        <!-- Nombres de papás y padrinos (formato elegante) -->
+        <div class="familia-xv" style="text-align:center; margin:28px 0 18px 0;">
+            <span style="color:#7d4ba8; font-size:1.25rem; font-family:'Dancing Script',cursive; font-weight:700; letter-spacing:0.5px; display:block; margin-bottom:6px;">En compañía de</span>
+            <div style="display:flex; justify-content:center; align-items:flex-start; gap:32px; flex-wrap:wrap; margin-bottom:6px;">
+                <div style="min-width:140px;">
+                    <span style="color:#d4af37; font-size:1.1rem; font-family:'Dancing Script',cursive; font-weight:700; display:block; margin-bottom:2px;">Sus papás</span>
+                    <span style="display:block; color:#555; font-size:1.02rem; font-family:'Playfair Display',serif; margin-bottom:2px;">José Antonio Salazar Morales</span>
+                    <span style="display:block; color:#555; font-size:1.02rem; font-family:'Playfair Display',serif;">Lissette Santamaría Correa</span>
+                </div>
+                <div style="min-width:140px;">
+                    <span style="color:#7d4ba8; font-size:1.1rem; font-family:'Dancing Script',cursive; font-weight:700; display:block; margin-bottom:2px;">Sus padrinos</span>
+                    <span style="display:block; color:#555; font-size:1.02rem; font-family:'Playfair Display',serif; margin-bottom:2px;">Félix Córdova Alba</span>
+                    <span style="display:block; color:#555; font-size:1.02rem; font-family:'Playfair Display',serif;">Santa Correa Sánchez</span>
+                </div>
+            </div>
+        </div>
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 4. Reproductor de música -->
+        <div class="music-section">
+            <p class="music-instruction">🎵 Clic en el reproductor para escuchar la canción</p>
+            <button id="playButton" class="play-button" aria-label="Reproducir música">
+                <span id="playIcon">▶</span>
+            </button>
+            <audio id="audioPlayer" loop>
+                <source src="musica.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <!-- 5. Cuenta regresiva -->
+        <div class="countdown-section">
+            <h2 class="section-title">Faltan</h2>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Min</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seg</div>
+                </div>
+            </div>
+            <p id="countdownMessage" class="countdown-message"></p>
+        </div>
+
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 6. Sección LUGAR -->
+        <div class="location-section">
+            <h2 class="section-title">📍 Ceremonia Religiosa</h2>
+            <p class="location-name" style="color:#388e3c; font-size:1.08rem; font-weight:700;">Parroquia Santa María de Guadalupe</p>
+            <div style="color:#7d4ba8; font-size:1.05rem; margin-bottom:7px;">a las <span style="color:#d4af37; font-weight:700;">4:00 p.m.</span></div>
+            <a href="https://maps.app.goo.gl/ystdQ5vSETh3HKnf7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Ver mapa
+            </a>
+        </div>
+
+        <!-- 7. Sección RECEPCIÓN Y ITINERARIO -->
+        <div class="itinerary-section">
+            <h2 class="section-title">🎊 Recepción & Itinerario</h2>
+            <div style="text-align:center; margin-bottom:10px;">
+                <span style="color:#7d4ba8; font-size:1.08rem; font-weight:600;">Salón de Eventos Zuris</span><br>
+                <span style="color:#388e3c; font-size:0.98rem;">Calle Simón Bolívar, Col. Rinconada, Emiliano Zapata, Veracruz</span><br>
+                <span style="color:#d4af37; font-size:1.05rem; font-weight:700;">A partir de las 5:00 p.m.</span>
+            </div>
+            <ul class="itinerary-list">
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🎉</span>
+                    <span class="itinerary-text">Recepción</span>
+                    <span class="itinerary-time">5:00 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🍽️</span>
+                    <span class="itinerary-text">Comida</span>
+                    <span class="itinerary-time">5:30 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">👑</span>
+                    <span class="itinerary-text">Ingreso de la quinceañera</span>
+                    <span class="itinerary-time">5:45 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">💒</span>
+                    <span class="itinerary-text">Ceremonia religiosa</span>
+                    <span class="itinerary-time">4:00 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">💃</span>
+                    <span class="itinerary-text">Protocolo y vals</span>
+                    <span class="itinerary-time">8:00 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🥂</span>
+                    <span class="itinerary-text">Brindis y dedicatoria</span>
+                    <span class="itinerary-time">8:30 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🌙</span>
+                    <span class="itinerary-text">Cierre del evento</span>
+                    <span class="itinerary-time">HASTA AMANECER</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 8. Sección CONFIRMAR ASISTENCIA -->
+        <div class="rsvp-section">
+            <h2 class="section-title">💌 Confirmar Asistencia</h2>
+            <p class="rsvp-text">Por favor confirmar antes del 12 de noviembre</p>
+            <a href="https://wa.me/522791007933?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20a%C3%B1os%20de%20Emily%20Camila.%20%C2%A1Ser%C3%A1%20un%20honor%20acompa%C3%B1arla%20en%20su%20d%C3%ADa%20especial!%20%F0%9F%92%96%F0%9F%8E%89" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Confirmar aquí
+            </a>
+        </div>
+
+        <!-- Footer decorativo -->S
+        <div class="footer">
+            <p class="footer-text">¡Será un honor contar con tu presencia!</p>
+            <div class="floral-divider">✿ ❀ ✿</div>
+        </div>
+
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

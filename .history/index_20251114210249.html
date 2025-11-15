@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años - María Camila</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        
+        <!-- 1. Foto circular de la quinceañera -->
+        <div class="photo-section">
+            <div class="photo-frame">
+                <img src="quinceanera.jpg" alt="Emily Camila" class="quinceanera-photo">
+            </div>
+            <div class="crown-decoration">👑</div>
+        </div>
+
+        <!-- 2. Título principal -->
+        <h1 class="main-title">Emily Camila</h1>
+
+        <!-- 3. Subtítulo descriptivo -->
+        <p class="subtitle">
+            Sus 15 años son un reflejo de su belleza, sus sueños y su alegría. 
+            Hoy celebramos con entusiasmo y amor...
+        </p>
+
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 4. Reproductor de música -->
+        <div class="music-section">
+            <p class="music-instruction">🎵 Clic en el reproductor para escuchar la canción</p>
+            <button id="playButton" class="play-button" aria-label="Reproducir música">
+                <span id="playIcon">▶</span>
+            </button>
+            <audio id="audioPlayer" loop>
+                <source src="musica.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <!-- 5. Cuenta regresiva -->
+        <div class="countdown-section">
+            <h2 class="section-title">Faltan</h2>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Min</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seg</div>
+                </div>
+            </div>
+            <p id="countdownMessage" class="countdown-message"></p>
+        </div>
+
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 6. Sección LUGAR -->
+        <div class="location-section">
+            <h2 class="section-title">📍 Lugar de la misa</h2>
+            <p class="location-name">Iglesia Sta. María de Guadalupe</p>
+            <a href="https://maps.app.goo.gl/ystdQ5vSETh3HKnf7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Ver mapa
+            </a>
+        </div>
+
+        <!-- 7. Sección ITINERARIO -->
+        <div class="itinerary-section">
+            <h2 class="section-title">📋 Itinerario</h2>
+            <ul class="itinerary-list">
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🎉</span>
+                    <span class="itinerary-text">Recepción</span>
+                    <span class="itinerary-time">5:00 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🍽️</span>
+                    <span class="itinerary-text">Comida</span>
+                    <span class="itinerary-time">5:30 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">👑</span>
+                    <span class="itinerary-text">Ingreso de la quinceañera</span>
+                    <span class="itinerary-time">5:45 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">💃</span>
+                    <span class="itinerary-text">Protocolo y vals</span>
+                    <span class="itinerary-time">8:00 pm</span>
+                </li>
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🥂</span>
+                    <span class="itinerary-text">Brindis y dedicatoria</span>
+                    <span class="itinerary-time">8:30 pm</span>
+                </li>
+    
+                <li class="itinerary-item">
+                    <span class="itinerary-icon">🌙</span>
+                    <span class="itinerary-text">Cierre del evento</span>
+                    <span class="itinerary-time">HASTA AMANECER</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Decoración floral -->
+        <div class="floral-divider">✿ ❀ ✿</div>
+
+        <!-- 8. Sección CONFIRMAR ASISTENCIA -->
+        <div class="rsvp-section">
+            <h2 class="section-title">💌 Confirmar Asistencia</h2>
+            <p class="rsvp-text">Por favor confirmar antes del 12 de noviembre</p>
+            <a href="https://wa.me/522791007933?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20a%C3%B1os%20de%20Emily%20Camila.%20%C2%A1Ser%C3%A1%20un%20honor%20acompa%C3%B1arla%20en%20su%20d%C3%ADa%20especial!%20%F0%9F%92%96%F0%9F%8E%89" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Confirmar aquí
+            </a>
+        </div>
+
+        <!-- Footer decorativo -->S
+        <div class="footer">
+            <p class="footer-text">¡Será un honor contar con tu presencia!</p>
+            <div class="floral-divider">✿ ❀ ✿</div>
+        </div>
+
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
