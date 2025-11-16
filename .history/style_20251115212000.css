@@ -1,0 +1,422 @@
+/* Fondo dorado para el cuadro de Confirmar Asistencia */
+.cuadro-rsvp {
+    background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%) !important;
+    border: 3px solid #f3d37a;
+    border-radius: 20px;
+    padding: 32px 18px 38px 18px;
+    margin: 35px 0;
+    text-align: center;
+    box-shadow: 0 4px 24px #e6e6fa55;
+}
+/* Cuadros personalizados para misa, recepción e itinerario */
+.cuadro-misa, .cuadro-recepcion, .cuadro-itinerario {
+    background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%) !important;
+    border: 2px solid rgba(212, 175, 55, 0.3) !important;
+}
+/* ==========================================
+   INVITACIÓN QUINCEAÑERA - DULCE PRIMAVERA
+   Tema: Morado, Rosa y Dorado
+   ========================================== */
+
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #f8f6f0 0%, #e6e6fa 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fffdfa;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(183, 215, 176, 0.15), 0 10px 40px rgba(212, 175, 55, 0.08);
+    border: 2px solid #b7d7b0;
+    position: relative;
+}
+
+/* ==========================================
+   1. SECCIÓN DE FOTO
+   ========================================== */
+.photo-section {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.photo-frame {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid #b7d7b0;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(183, 215, 176, 0.25), 0 8px 20px rgba(212, 175, 55, 0.15);
+    position: relative;
+}
+
+.quinceanera-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.crown-decoration {
+    font-size: 2rem;
+    margin-top: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ==========================================
+   2. TÍTULO PRINCIPAL
+   ========================================== */
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+        color: #7d4ba8;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px #b7d7b0;
+    font-weight: 700;
+}
+
+/* ==========================================
+   3. SUBTÍTULO
+   ========================================== */
+.subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+/* ==========================================
+   DECORACIONES FLORALES
+   ========================================== */
+.floral-divider {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #b7d7b0;
+    margin: 25px 0;
+    opacity: 0.8;
+}
+
+/* ==========================================
+   4. REPRODUCTOR DE MÚSICA
+   ========================================== */
+.music-section {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.music-instruction {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    background: linear-gradient(135deg, #d4af37 0%, #f4d88a 100%);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+}
+
+.play-button:active {
+    transform: scale(0.95);
+}
+
+#playIcon {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+/* ==========================================
+   5. CUENTA REGRESIVA
+   ========================================== */
+.countdown-section {
+    margin: 35px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+        color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.countdown-box {
+    background: linear-gradient(135deg, #fffbe6 0%, #f4e7b3 100%);
+    border-radius: 12px;
+    padding: 15px 10px;
+    min-width: 70px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.18);
+    border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+.countdown-number {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: rgb(54, 54, 54);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: #000000;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-message {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #d4af37;
+    font-weight: 700;
+        color: #666;
+
+/* ==========================================
+   6. SECCIÓN LUGAR
+   ========================================== */
+.location-section {
+    text-align: center;
+    margin: 35px 0;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    border: 2.5px solid #d4af37;
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.10);
+}
+
+.location-name {
+    font-size: 1.1rem;
+        color: #555;
+    margin: 15px 0 20px 0;
+    font-weight: 600;
+}
+
+/* ==========================================
+   7. ITINERARIO
+   ========================================== */
+.itinerary-section {
+    margin: 35px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f6f0 0%, #e6e6fa 100%);
+    border-radius: 15px;
+    border: 2px solid #b7d7b0;
+    box-shadow: 0 4px 16px rgba(183, 215, 176, 0.10);
+}
+
+.itinerary-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.itinerary-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(125, 75, 168, 0.1);
+}
+
+.itinerary-item:last-child {
+    border-bottom: none;
+}
+
+.itinerary-icon {
+    font-size: 1.3rem;
+    margin-right: 12px;
+    min-width: 30px;
+}
+
+.itinerary-text {
+    flex: 1;
+    font-size: 0.95rem;
+        color: #555;
+}
+
+.itinerary-time {
+    font-size: 0.9rem;
+    color: #7d4ba8;
+    font-weight: 600;
+    min-width: 70px;
+    text-align: right;
+}
+
+/* ==========================================
+   8. CONFIRMAR ASISTENCIA
+   ========================================== */
+.rsvp-section {
+    text-align: center;
+    margin: 35px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f6f0 0%, #e6e6fa 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.rsvp-text {
+    font-size: 1rem;
+        color: #666;
+    margin: 15px 0 20px 0;
+    font-style: italic;
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #575757 0%, #9d6bc8 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(125, 75, 168, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(125, 75, 168, 0.5);
+    background: linear-gradient(135deg, #6a3d92 0%, #8a5ab4 100%);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(125, 75, 168, 0.1);
+}
+
+.footer-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+        color: #7d4ba8;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+@media (max-width: 450px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .countdown-box {
+        min-width: 65px;
+        padding: 12px 8px;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    .itinerary-text {
+        font-size: 0.85rem;
+    }
+    
+    .itinerary-time {
+        font-size: 0.8rem;
+        min-width: 60px;
+    }
+}
+
+@media (max-width: 350px) {
+    .photo-frame {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .countdown-container {
+        gap: 8px;
+    }
+    
+    .countdown-box {
+        min-width: 60px;
+        padding: 10px 5px;
+    }
+    
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+}
